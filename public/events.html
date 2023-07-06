@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewcomersGuide</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/events.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>  
+        <script src="eventsApi.js"></script></head>
+<body>
+
+    <nav>
+        <div class="navigation">
+            <div class="title-container">
+                <div class="title-logo"></div>
+                <a class="title" href="index.html">NewcomersGuide</a>
+            </div>
+            <div class="menu">
+                <a class="menu-link" href="step-by-step.html">Step-by-Step Guides</a>        
+                <a class="menu-link" href="map-based-services.html">Map-Based Services</a>        
+                <a class="menu-link" href="events.html">Local Events</a>
+                <a class="menu-link" href="#">Forums</a>
+                <form class="search-in-site" action="">
+                    <input class="search-site-input"  type="text" placeholder="Search in site">
+                    <img src="assets/search.png" alt="search" width="18px" height="18px">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <hr>
+
+    <section id="step-by-step" class="step-by-step-section">
+        <h1 class="heading-name">Explore Local Events</h2>
+        <p class="heading-description">Find exciting events happening near you</p>
+        <form class="search-map-form" action="">
+            <input type="text" id= "city" placeholder="Search events"/>
+            <div class="serach-btn-container">
+                <button id="searchBtn" onclick="searchBtnClick(event);">Search</button>
+            </div>
+        </form>
+     </section>
+
+     <div id="searchMap" class="interactive-map">
+        MAP
+    </div>
+
+    <section id="map-based-services" class="map-section">
+        <div class="map-container">
+            <div class="events-heading-container">
+                <h2 class="heading-name">Featured events</h2>
+                <p class="heading-description">Check out these upcoming events</p>
+            </div>
+            <div class="events-container">
+                <div class="map-item" id="event1">
+                    <img class="service-image" src="assets/image.jpg" alt="Service image" width="100px" height="100px">
+                    <div class="map-item-details">
+                        <h3>Event 1</h3>
+                        <p class="map-item-description">Join this workshop to learn about job searching techniques</p>
+                        <div class="guides-categories">
+                            <p class="location">Date: September 18, 2022</p>
+                            <p class="location">Location: City A</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-item" id="event2">
+                    <img class="service-image" src="assets/image.jpg" alt="Service image" width="100px" height="100px">
+                    <div class="map-item-details">
+                        <h3>Event 2</h3>
+                        <p class="map-item-description">Expand your professional network at this networking event</p>
+                        <div class="guides-categories">
+                            <p class="location">Date: October 5, 2022</p>
+                            <p class="location">Location: City A</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-item" id="event3">
+                    <img class="service-image" src="assets/image.jpg" alt="Service image" width="100px" height="100px">
+                    <div class="map-item-details">
+                        <h3>Event 3</h3>
+                        <p class="map-item-description">Join this workshop to learn about job searching techniques</p>
+                        <div class="guides-categories">
+                            <p class="location">Date: September 18, 2022</p>
+                            <p class="location">Location: City A</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-item" id="event4">
+                    <img class="service-image" src="assets/image.jpg" alt="Service image" width="100px" height="100px">
+                    <div class="map-item-details">
+                        <h3>Event 4</h3>
+                        <p class="map-item-description">Expand your professional network at this networking event</p>
+                        <div class="guides-categories">
+                            <p class="location">Date: October 5, 2022</p>
+                            <p class="location">Location: City A</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <section id="featured-services" class="featured-services-section">
+        <h2 class="heading-name">Upcoming Events</h2>
+        <div class="guides-container">
+            <div id="event5" class="category">
+                <div class="services-icon">
+                    <img src="assets/date-icon.png" alt="Icon">
+                </div>
+                <h3>Event 5</h3>
+                <p class="service-description">Date: Event Date</p>
+                <h5 class="number-of-services">Location: Event Location</h5>
+            </div>
+
+            <div id="event6" class="category">
+                <div class="services-icon">
+                    <img src="assets/date-icon.png"alt="Icon">
+                </div>
+                <h3>Event 6</h3>
+                <p class="service-description">Date: Event Date</p>
+                <h5 class="number-of-services">Location: Event Location</h5>
+            </div>
+
+            <div id="event7" class="category">
+                <div class="services-icon">
+                    <img src="assets/date-icon.png" alt="Icon">
+                </div>
+                <h3>Event 7</h3>
+                <p class="service-description">Date: Event Date</p>
+                <h5 class="number-of-services">Location: Event Location</h5>
+            </div>
+        </div>
+     </section>
+
+    <hr>
+    <footer>
+        <a class="menu-link" href="#">About Us</a>        
+        <a class="menu-link" href="#">Contact Us</a>        
+        <a class="menu-link" href="#">Privacy Policy</a>
+        <a class="menu-link" href="#">Terms of Service</a>
+    </footer>
+    <script src="script.js"></script>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrXSJqmXkoCIg6G21YiZluWfolfXNa-2w&libraries=places&callback=createMap"
+                async defer></script>
+</body>
+</html>

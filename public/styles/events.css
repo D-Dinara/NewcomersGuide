@@ -1,0 +1,120 @@
+.search-map-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.search-map-form input {
+    padding: 8px 12px;
+    border-radius: 7px;
+    border: 1px solid #D9D9D9;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.step-by-step-section {
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    padding: 60px 0;
+    margin: 0;
+}
+
+.filter {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.step-by-step-section .heading-name, .step-by-step-section .heading-description {
+    color: white;
+}
+
+.interactive-map {
+    width: 75%;
+    height: 470px;
+    background-color: #D9D9D9;
+    margin: 60px auto;
+}
+
+.map-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.events-heading-container {
+    flex: 1;
+}
+
+.map-item {
+    margin: 20px;
+}
+
+.events-container {
+    flex: 2;
+}
+
+.featured-services-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.guides-container {
+    margin-top: 24px;
+    padding: 20px;
+}
+
+.category {
+    border: none;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+}
+
+.category h3 {
+    font-size: 20px;
+}
+
+.service-description {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: rgba(0,0,0,0.5);
+    margin: 10px;
+}
+
+.number-of-services {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.services-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #e9e7e7;
+    margin: 20px;
+}
+
+.services-icon img {
+    width: 70px;
+    height: 70px;
+}
+
+.map-item-description {
+    font-size: 16px;
+}
+
+
+
